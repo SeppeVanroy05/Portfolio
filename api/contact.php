@@ -36,7 +36,7 @@ $name = $clean($payload['name'] ?? '');
 $email = $clean($payload['email'] ?? '');
 $subject = $clean($payload['subject'] ?? '');
 $message = trim((string) ($payload['message'] ?? ''));
-$website = $clean($payload['website'] ?? '');
+$website = $clean($payload['_honey'] ?? $payload['website'] ?? '');
 
 if ($website !== '') {
     $respond(200, ['success' => true]);
@@ -58,7 +58,8 @@ if (strlen($message) > 4000) {
     $respond(400, ['success' => false, 'error' => 'Message is too long']);
 }
 
-$recipient = 'seppe.vanroy@telenet.be';
+$recipients = ['seppe.vanroy@telenet.be', 'svsolutions.support@gmail.com'];
+$recipient = implode(', ', $recipients);
 $mailSubject = 'Portfolio contact: ' . $subject;
 $mailBody = "New message from the portfolio contact form\n\n";
 $mailBody .= "Name: {$name}\n";
@@ -72,7 +73,7 @@ $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 $host = preg_replace('/:\\d+$/', '', $host);
 $fromAddress = getenv('CONTACT_FROM') ?: ('portfolio@' . $host);
 if (!filter_var($fromAddress, FILTER_VALIDATE_EMAIL)) {
-    $fromAddress = $recipient;
+    $fromAddress = $recipients[0];
 }
 
 $headers = [
@@ -83,7 +84,7 @@ $headers = [
     'X-Mailer: PHP/' . phpversion(),
 ];
 
-$sendWithSmtp = static function (string $to, string $subject, string $body, array $headers, string $from) use ($respond): bool {
+$sendWithSmtp = static function (array $recipients, string $subject, string $body, array $headers, string $from) use ($respond): bool {
     $smtpHost = getenv('SMTP_HOST') ?: '';
     $smtpUser = getenv('SMTP_USER') ?: '';
     $smtpPass = getenv('SMTP_PASS') ?: '';
@@ -146,12 +147,14 @@ $sendWithSmtp = static function (string $to, string $subject, string $body, arra
     $command(base64_encode($smtpUser), [334]);
     $command(base64_encode($smtpPass), [235]);
     $command('MAIL FROM:<' . $from . '>', [250]);
-    $command('RCPT TO:<' . $to . '>', [250, 251]);
+    foreach ($recipients as $to) {
+        $command('RCPT TO:<' . $to . '>', [250, 251]);
+    }
     $command('DATA', [354]);
 
     $message = implode("\r\n", $headers)
         . "\r\nSubject: " . $subject
-        . "\r\nTo: " . $to
+        . "\r\nTo: " . implode(', ', $recipients)
         . "\r\n\r\n"
         . $body;
     $message = preg_replace('/^\./m', '..', $message);
@@ -163,7 +166,7 @@ $sendWithSmtp = static function (string $to, string $subject, string $body, arra
     return true;
 };
 
-$success = $sendWithSmtp($recipient, $mailSubject, $mailBody, $headers, $fromAddress);
+$success = $sendWithSmtp($recipients, $mailSubject, $mailBody, $headers, $fromAddress);
 
 if (!$success) {
     $additionalParams = '';

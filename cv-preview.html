@@ -1,36 +1,17 @@
 <!doctype html>
 <html lang="nl">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJSTMZHYVC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WJSTMZHYVC');
-</script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV Preview</title>
-  <style>
-    html, body { margin: 0; height: 100%; background: #020617; }
-    body { display: grid; place-items: start center; padding: 24px; }
-    .frame {
-      width: min(980px, 100%);
-      height: 1200px;
-      border-radius: 28px;
-      overflow: hidden;
-      background: #fff;
-      box-shadow: 0 24px 70px rgba(2, 6, 23, 0.42);
-    }
-    object { width: 100%; height: 100%; border: 0; display: block; }
-  </style>
-</head>
-<body>
-  <div class="frame">
-    <object data="http://localhost:8000/assets/CV_Seppe_Vanroy.pdf?v=20260429.3#page=1&view=FitH&toolbar=0&navpanes=0&scrollbar=1" type="application/pdf"></object>
-  </div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV · Seppe Vanroy</title>
+  </head>
+  <body style="margin: 0">
+    <object
+      data="assets/CV-Seppe_vanroy.pdf"
+      type="application/pdf"
+      style="display: block; width: 100%; height: 100vh"
+    >
+      <a href="assets/CV-Seppe_vanroy.pdf">Open CV PDF</a>
+    </object>
+  </body>
 </html>

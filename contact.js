@@ -26,7 +26,7 @@ const contactCopy = {
     asideText: 'Berichten uit dit formulier worden verzonden naar <a href="mailto:seppe.vanroy@telenet.be">seppe.vanroy@telenet.be</a>.',
     asideItems: ['Ideaal voor stages en projectvragen', 'Antwoord meestal op dezelfde dag', 'GitHub en LinkedIn blijven ook beschikbaar'],
     footer: {
-      description: 'Tweedejaars APP/AI-student met interesse in webontwikkeling, praktische IT-support en duidelijke oplossingen.',
+      description: 'Tweedejaars Application Development-student met interesse in webontwikkeling, praktische IT-support en duidelijke oplossingen.',
       connect: 'Connecteer',
       copyright: '&copy; 2026 Seppe Vanroy. Alle rechten voorbehouden.',
       socialsLabel: 'Sociale profielen',
@@ -68,7 +68,7 @@ const contactCopy = {
     asideText: 'Messages from this form are sent to <a href="mailto:seppe.vanroy@telenet.be">seppe.vanroy@telenet.be</a>.',
     asideItems: ['Ideal for internships and project questions', 'Usually replies the same day', 'GitHub and LinkedIn remain available too'],
     footer: {
-      description: 'Second-year APP/AI student with an interest in web development, practical IT support, and clear solutions.',
+      description: 'Second-year Application Development student with an interest in web development, practical IT support, and clear solutions.',
       connect: 'Connect',
       copyright: '&copy; 2026 Seppe Vanroy. All rights reserved.',
       socialsLabel: 'Social profiles',

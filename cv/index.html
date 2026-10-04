@@ -1,104 +1,190 @@
 <!doctype html>
 <html lang="nl">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJSTMZHYVC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WJSTMZHYVC');
-</script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>html, body { background: #020617; color: #e2e8f0; }</style>
-  <title>Seppe | CV</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <meta name="description" content="Bekijk of download het CV van Seppe Vanroy, APP/AI-student met ervaring in projecten en IT-support." />
-  <link rel="canonical" href="https://sv-solutions.be/cv.html" />
-  <link rel="stylesheet" href="styles.css?v=20260430.11" />
-</head>
-<body class="about-page project-page cv-page">
-  <div class="about-atmosphere" aria-hidden="true">
-    <span class="orb orb-a"></span>
-    <span class="orb orb-b"></span>
-    <span class="orb orb-c"></span>
-  </div>
-
-  <header class="site-header">
-    <a class="brand" href="index.html">SEPPE</a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-i18n="nav.home">Home</a>
-      <a href="about.html" data-i18n="nav.about">Over Mij</a>
-      <a href="projects.html" data-i18n="nav.projects">Projecten</a>
-      <a class="active" href="cv.html" data-i18n="nav.cv">CV</a>
-      <a href="contact.html" data-i18n="nav.contact">Contact</a>
-      <div class="language-switcher">
-        <button class="lang-btn lang-btn-nl active" data-lang="nl" title="Nederlands">NL</button>
-        <button class="lang-btn lang-btn-en" data-lang="en" title="English">EN</button>
-      </div>
-    </nav>
-  </header>
-
-  <div class="about-progress" aria-hidden="true">
-    <span id="aboutProgressBar"></span>
-  </div>
-
-  <main class="about-main project-main cv-main cv-page-shell" aria-label="CV van Seppe Vanroy">
-    <section class="cv-viewer">
-      <div class="cv-page-hero">
-        <div>
-          <p class="eyebrow">Curriculum vitae</p>
-          <h1>Seppe Vanroy</h1>
+  <head>
+    <base href="../" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV | SV-Solutions · Seppe Vanroy</title>
+    <meta
+      name="description"
+      content="Portfolio van Seppe Vanroy. Ontdek mijn werk in applicatieontwikkeling, webontwikkeling en IT."
+    />
+    <link rel="canonical" href="https://sv-solutions.be/cv.html" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=sv2" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer=""></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main"
+      ><span data-nl="Naar de inhoud" data-en="Skip to content"
+        >Naar de inhoud</span
+      ></a
+    >
+    <header class="header wrap">
+      <a class="brand" href="index.html" aria-label="SV-Solutions home"
+        ><span class="brand-mark">sv<span>.</span></span
+        ><span class="brand-name">SV-SOLUTIONS</span></a
+      ><button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+        aria-label="Menu"
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="navigation" aria-label="Hoofdnavigatie">
+        <a href="index.html"><span data-nl="Home" data-en="Home">Home</span></a
+        ><a href="projects.html"
+          ><span data-nl="Projecten" data-en="Work">Projecten</span></a
+        ><a href="about.html"
+          ><span data-nl="Over mij" data-en="About">Over mij</span></a
+        ><a href="cv.html" aria-current="page"
+          ><span data-nl="CV" data-en="CV">CV</span></a
+        >
+        <div class="languages" aria-label="Taal">
+          <button type="button" data-language="nl" aria-pressed="true">
+            NL</button
+          ><span>/</span
+          ><button type="button" data-language="en" aria-pressed="false">
+            EN
+          </button>
         </div>
-        <div class="cv-hero-actions" aria-label="CV acties">
-          <a class="btn-link" href="assets/CV_Seppe_Vanroy.pdf?v=20260429.3" target="_blank" rel="noopener">Open PDF</a>
-          <a class="btn-link btn-link-secondary" href="assets/CV_Seppe_Vanroy.pdf?v=20260429.3" download="CV_Seppe_Vanroy.pdf">Download PDF</a>
+        <a class="nav-contact" href="contact.html"
+          ><span data-nl="Laten we praten" data-en="Let’s talk"
+            >Laten we praten</span
+          ></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-intro wrap">
+        <p class="eyebrow">CURRICULUM VITAE</p>
+        <h1>Seppe <span class="highlight">Vanroy.</span></h1>
+        <p class="lead">
+          <span data-nl="In mijn CV vind je mijn opleiding, ervaring en vaardigheden op een rij. Bekijk het hieronder of download het om later rustig door te nemen." data-en="My CV gives you an overview of my education, experience and skills. Read it below or download it to take a closer look later.">In mijn CV vind je mijn opleiding, ervaring en vaardigheden op een rij. Bekijk het hieronder of download het om later rustig door te nemen.</span>
+        </p>
+        <div class="cv-actions">
+          <a
+            class="button"
+            download="CV-Seppe_vanroy.pdf"
+            href="assets/CV-Seppe_vanroy.pdf"
+            ><span data-nl="Download CV" data-en="Download CV"
+              >Download CV</span
+            ></a
+          ><a
+            class="button secondary"
+            target="_blank"
+            rel="noopener"
+            href="assets/CV-Seppe_vanroy.pdf"
+            ><span data-nl="Open PDF" data-en="Open PDF">Open PDF</span></a
+          >
         </div>
-      </div>
-      <div class="cv-viewer-frame">
-        <iframe src="assets/CV_Seppe_Vanroy.pdf?v=20260429.3#page=1&zoom=page-width&toolbar=0&navpanes=0&scrollbar=1&view=FitH" title="CV van Seppe Vanroy"></iframe>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="footer-container">
+      </section>
+      <section class="wrap">
+        <div class="cv-frame">
+          <iframe
+            src="assets/CV-Seppe_vanroy.pdf#view=FitH"
+            title="CV van Seppe Vanroy"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap">
       <div class="footer-top">
-        <div class="footer-left">
-          <p class="footer-title">Seppe Vanroy</p>
-          <p class="footer-description">Tweedejaars APP/AI-student met interesse in webontwikkeling, praktische IT-support en duidelijke oplossingen.</p>
-        </div>
-        <div class="footer-right">
-          <p class="footer-connect-label">Connecteer</p>
-          <div class="footer-socials" aria-label="Sociale profielen">
-            <a class="social-icon" href="mailto:seppe.vanroy@telenet.be" aria-label="Stuur een e-mail naar Seppe">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.2-8 5.2-8-5.2V6l8 5.2L20 6v2.2Z" /></svg>
-            </a>
-            <a class="social-icon" href="https://github.com/DaddySeppe" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profiel">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.04 1.53 1.04.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 7c.85 0 1.7.11 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.56c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" /></svg>
-            </a>
-            <a class="social-icon" href="https://linkedin.com/in/seppe-vanroy-857680331" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profiel">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9.75h4v10.5H3V9.75Zm6.25 0h3.82v1.44h.05c.53-.95 1.83-1.75 3.77-1.75 4.03 0 4.78 2.49 4.78 5.72v5.09h-4v-4.52c0-1.08-.02-2.47-1.6-2.47-1.6 0-1.85 1.18-1.85 2.39v4.6h-3.97V9.75Z" /></svg>
-            </a>
-          </div>
-          <nav class="footer-links" aria-label="Footer links">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projecten</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
-          </nav>
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">sv<span>.</span></span
+          ><span class="brand-name">SV-SOLUTIONS</span></a
+        >
+        <p>
+          <span
+            data-nl="Bedankt om even te komen kijken."
+            data-en="Thanks for stopping by."
+            >Bedankt om even te komen kijken.</span
+          >
+        </p>
+        <div class="socials">
+          <a
+            href="https://github.com/DaddySeppe"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          ><a
+            href="https://linkedin.com/in/seppe-vanroy-857680331"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          ><a href="mailto:seppe.vanroy@telenet.be">E-mail</a>
         </div>
       </div>
-      <div class="footer-divider"></div>
-      <div class="footer-bottom"><p class="footer-copyright">&copy; 2026 Seppe Vanroy. Alle rechten voorbehouden.</p></div>
-    </div>
-  </footer>
-
-  <script src="script.min.js?v=20260430.7"></script>
-</body>
+      <div class="footer-bottom">
+        <span>© 2026 Seppe Vanroy</span
+        ><span data-nl="Portfolio van Seppe." data-en="Seppe’s portfolio."
+          >Portfolio van Seppe.</span
+        ><a href="#top"
+          ><span data-nl="Terug naar boven" data-en="Back to top"
+            >Terug naar boven</span
+          ></a
+        >
+      </div>
+    </footer>
+    <aside class="chat">
+      <button
+        class="chat-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="chat-panel"
+        aria-label="Portfolio assistent"
+      >
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          aria-hidden="true"
+        >
+          <path d="M4 4h16v12H9l-5 4V4Z"></path>
+          <path d="M8 9h8M8 12h5"></path>
+        </svg>
+      </button>
+      <section id="chat-panel" hidden="" aria-label="Portfolio assistent">
+        <div class="chat-head">
+          <strong
+            ><span data-nl="Portfolio assistent" data-en="Portfolio assistant"
+              >Portfolio assistent</span
+            ></strong
+          ><button type="button" class="chat-close" aria-label="Sluiten">
+            ×
+          </button>
+        </div>
+        <div class="chat-messages" role="log" aria-live="polite">
+          <p>
+            <span
+              data-nl="Hoi! Vraag me iets over mijn projecten, skills of ervaring."
+              data-en="Hi! Ask me about my projects, skills or experience."
+              >Hoi! Vraag me iets over mijn projecten, skills of ervaring.</span
+            >
+          </p>
+        </div>
+        <form id="chat-form">
+          <label class="sr-only" for="chat-input"
+            ><span data-nl="Je vraag" data-en="Your question"
+              >Je vraag</span
+            ></label
+          ><input
+            id="chat-input"
+            required=""
+            maxlength="600"
+            autocomplete="off"
+          /><button type="submit">
+            <span data-nl="Stuur" data-en="Send">Stuur</span>
+          </button>
+        </form>
+      </section>
+    </aside>
+  </body>
 </html>
-
-
-

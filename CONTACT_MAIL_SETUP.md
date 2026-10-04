@@ -1,35 +1,14 @@
-# Contactformulier mail instellen
+# Contactformulieren
 
-Het contactformulier stuurt altijd naar:
+De formulieren op Home en Contact gebruiken dezelfde verzendcode in `script.js` en FormSubmit:
+- Naar: seppe.vanroy@telenet.be
+- CC: svsolutions.support@gmail.com
+- Reply-To: het e-mailadres van de bezoeker
 
-```text
-seppe.vanroy@telenet.be
-```
+Ook zonder JavaScript bevatten de formulieren het CC-adres, de e-mailtemplate en spamval.
 
-De backend staat in `api/contact.php`.
+FormSubmit kan bij het eerste gebruik een activatiemail sturen. Bevestig deze in de ontvangende mailbox; verstuur daarna opnieuw. Een succesvolle HTTP-reactie bevestigt acceptatie door de maildienst, geen ontvangst in beide inboxen.
 
-## Beste optie: SMTP instellen
+Documentatie: https://formsubmit.co/documentation
 
-Zet deze environment variables op je hosting:
-
-```text
-SMTP_HOST=smtp.jouwprovider.be
-SMTP_PORT=587
-SMTP_SECURE=tls
-SMTP_USER=jouw_smtp_gebruikersnaam
-SMTP_PASS=jouw_smtp_wachtwoord
-CONTACT_FROM=portfolio@jouwdomein.be
-```
-
-Voor poort `465` gebruik je:
-
-```text
-SMTP_SECURE=ssl
-```
-
-## Fallback
-
-Als SMTP niet ingesteld is, probeert `api/contact.php` automatisch `PHP mail()`.
-Dat werkt alleen als je hosting mail delivery ondersteunt.
-
-Op een lokale server of gewone static hosting werkt echte mail meestal niet.
+De alternatieve backend `api/contact.php` gebruikt dezelfde twee ontvangers. De website gebruikt deze backend momenteel niet. Voor gebruik ervan zijn SMTP_HOST, SMTP_PORT, SMTP_SECURE, SMTP_USER, SMTP_PASS en CONTACT_FROM nodig. Zonder SMTP probeert de backend PHP mail().

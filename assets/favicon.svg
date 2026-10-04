@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Seppe logo">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1d4ed8"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#67e8f9"/>
-      <stop offset="100%" stop-color="#f7d44c"/>
-    </linearGradient>
-  </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
-  <circle cx="64" cy="64" r="43" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
-  <path d="M44 43h39c8 0 14 6 14 14s-6 14-14 14H58c-4 0-7 3-7 7s3 7 7 7h34" fill="none" stroke="url(#accent)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M45 91h38" fill="none" stroke="#e2e8f0" stroke-width="10" stroke-linecap="round" opacity="0.95"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="SV-Solutions"><rect width="128" height="128" rx="24" fill="#fafbf9"/><g transform="translate(14 91) scale(0.09009009009009009 -0.09009009009009009)"><path transform="translate(0 0)" d="M276 -14Q179 -14 117.0 28.0Q55 70 42 148L158 178Q165 143 181.5 123.0Q198 103 222.5 94.5Q247 86 276 86Q320 86 341.0 101.5Q362 117 362 140Q362 163 342.0 175.5Q322 188 278 196L250 201Q198 211 155.0 228.5Q112 246 86.0 277.0Q60 308 60 357Q60 431 114.0 470.5Q168 510 256 510Q339 510 394.0 473.0Q449 436 466 376L349 340Q341 378 316.5 394.0Q292 410 256 410Q220 410 201.0 397.5Q182 385 182 363Q182 339 202.0 327.5Q222 316 256 310L284 305Q340 295 385.5 278.5Q431 262 457.5 231.5Q484 201 484 149Q484 71 427.5 28.5Q371 -14 276 -14Z" fill="#17201d"/><path transform="translate(394.0 0)" d="M174 0 16 496H150L265 92H283L398 496H532L374 0Z" fill="#17201d"/><path transform="translate(812.0 0)" d="M150 -14Q109 -14 81.5 12.5Q54 39 54 81Q54 123 81.5 149.5Q109 176 150 176Q190 176 217.0 149.5Q244 123 244 81Q244 39 217.0 12.5Q190 -14 150 -14Z" fill="#599517"/></g></svg>

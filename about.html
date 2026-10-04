@@ -1,276 +1,352 @@
 <!doctype html>
 <html lang="nl">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJSTMZHYVC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WJSTMZHYVC');
-</script>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>html, body { background: #020617; color: #e2e8f0; }</style>
-  <title>Seppe | About Me</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <meta name="description" content="Leer Seppe Vanroy kennen: APP/AI-student met interesse in webontwikkeling, IT-support, projecten en praktische oplossingen." />
-  <link rel="canonical" href="https://sv-solutions.be/about.html" />
-  <link rel="stylesheet" href="styles.css?v=20260430.11" />
-</head>
-<body class="about-page">
-  <div class="about-atmosphere" aria-hidden="true">
-    <span class="orb orb-a"></span>
-    <span class="orb orb-b"></span>
-    <span class="orb orb-c"></span>
-    <div class="focus-wheel">
-      <span class="wheel-ring ring-outer"></span>
-      <span class="wheel-ring ring-mid"></span>
-      <span class="wheel-ring ring-core"></span>
-      <span class="wheel-spoke spoke-a"></span>
-      <span class="wheel-spoke spoke-b"></span>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <a class="brand" href="index.html">SEPPE</a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" data-i18n="nav.home">Home</a>
-      <a class="active" href="about.html" data-i18n="nav.about">Over Mij</a>
-      <a href="projects.html" data-i18n="nav.projects">Projecten</a>
-      <a href="cv.html" data-i18n="nav.cv">CV</a>
-      <a href="contact.html" data-i18n="nav.contact">Contact</a>
-      <div class="language-switcher">
-        <button class="lang-btn lang-btn-nl active" data-lang="nl" title="Nederlands">NL</button>
-        <button class="lang-btn lang-btn-en" data-lang="en" title="English">EN</button>
-      </div>
-    </nav>
-  </header>
-
-  <div class="about-progress" aria-hidden="true">
-    <span id="aboutProgressBar"></span>
-  </div>
-
-  <main class="about-main about-ultra-redesign">
-    <section class="about-hero-full reveal">
-      <div class="hero-content-massive">
-        <p class="hero-eyebrow-mega">WIE IK BEN</p>
-        <h1 class="hero-title-giant">Seppe Vanroy</h1>
-        <p class="hero-intro-text">
-          Ik ben een tweedejaarsstudent APP/AI die graag praktisch bezig is met IT. Ik werk rustig,
-          denk graag mee en probeer vooral dingen te maken die logisch in elkaar zitten en echt gebruikt kunnen worden.
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Over mij | SV-Solutions · Seppe Vanroy</title>
+    <meta
+      name="description"
+      content="Portfolio van Seppe Vanroy. Ontdek mijn werk in applicatieontwikkeling, webontwikkeling en IT."
+    />
+    <link rel="canonical" href="https://sv-solutions.be/about.html" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=sv2" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer=""></script>
+  </head>
+  <body id="top" class="personal-page">
+    <a class="skip-link" href="#main"
+      ><span data-nl="Naar de inhoud" data-en="Skip to content"
+        >Naar de inhoud</span
+      ></a
+    >
+    <header class="header wrap">
+      <a class="brand" href="index.html" aria-label="SV-Solutions home"
+        ><span class="brand-mark">sv<span>.</span></span
+        ><span class="brand-name">SV-SOLUTIONS</span></a
+      ><button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+        aria-label="Menu"
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="navigation" aria-label="Hoofdnavigatie">
+        <a href="index.html"><span data-nl="Home" data-en="Home">Home</span></a
+        ><a href="projects.html"
+          ><span data-nl="Projecten" data-en="Work">Projecten</span></a
+        ><a href="about.html" aria-current="page"
+          ><span data-nl="Over mij" data-en="About">Over mij</span></a
+        ><a href="cv.html"><span data-nl="CV" data-en="CV">CV</span></a>
+        <div class="languages" aria-label="Taal">
+          <button type="button" data-language="nl" aria-pressed="true">
+            NL</button
+          ><span>/</span
+          ><button type="button" data-language="en" aria-pressed="false">
+            EN
+          </button>
+        </div>
+        <a class="nav-contact" href="contact.html"
+          ><span data-nl="Laten we praten" data-en="Let’s talk"
+            >Laten we praten</span
+          ></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="personal-intro wrap">
+        <div class="personal-name">
+          <p class="eyebrow">
+            <span data-nl="OVER MIJ" data-en="ABOUT ME">OVER MIJ</span>
+          </p>
+          <h1>Seppe<br /><em>Vanroy.</em></h1>
+          <p class="personal-caption">Application Development STUDENT · SV-SOLUTIONS</p>
+        </div>
+        <figure class="personal-photo">
+          <img
+            src="assets/images/profile-placeholder-640.webp"
+            width="640"
+            height="853"
+            alt="Seppe Vanroy"
+            fetchpriority="high"
+          />
+          <figcaption>
+            <span data-nl="Ja, dit ben ik." data-en="Yep, that’s me."
+              >Ja, dit ben ik.</span
+            >
+          </figcaption>
+        </figure>
+        <div class="personal-hello">
+          <span class="hello-label"
+            ><span data-nl="Hey, aangenaam." data-en="Hey, nice to meet you."
+              >Hey, aangenaam.</span
+            ></span
+          >
+          <p>
+            <span data-nl="Ik ben Seppe en ik studeer Application Development. Ik bouw graag applicaties met React, .NET en C#. Daarnaast run ik SV-Solutions, mijn eigen bedrijf waarmee ik websites maak voor bedrijven." data-en="I’m Seppe and I study Application Development. I enjoy building applications with React, .NET and C#. I also run SV-Solutions, my own business building websites for companies.">Ik ben Seppe en ik studeer Application Development. Ik bouw graag applicaties met React, .NET en C#. Daarnaast run ik SV-Solutions, mijn eigen bedrijf waarmee ik websites maak voor bedrijven.</span>
+          </p>
+          <a class="text-link" href="cv.html"
+            ><span data-nl="Mijn CV bekijken" data-en="View my CV"
+              >Mijn CV bekijken</span
+            ></a
+          >
+        </div>
+      </section>
+      <section class="personal-story wrap">
+        <p class="eyebrow">
+          <span data-nl="WAT MIJ DRIJFT" data-en="WHAT DRIVES ME"
+            >WAT MIJ DRIJFT</span
+          >
         </p>
-        <div class="hero-stats-ultra">
-          <div class="stat-block">
-            <div class="stat-number">APP/AI</div>
-            <div class="stat-label">Applicatieontwikkeling en AI</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-number">IT</div>
-            <div class="stat-label">Praktijkgericht</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-number">CV</div>
-            <div class="stat-label">Bekijk en download</div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-image-block">
-        <div class="image-frame-container">
-          <div class="image-frame-premium">
-            <img src="assets/images/profile-placeholder-420.jpg" alt="Portrait of Seppe" width="420" height="560" decoding="async" fetchpriority="high" />
-          </div>
-          <div class="image-name">SEPPE VANROY</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills-matrix-section reveal">
-      <div class="section-header-centered">
-        <p class="section-eyebrow">OVER MIJ</p>
-        <h2>Wie ik ben naast mijn studies</h2>
-      </div>
-      <div class="skills-matrix">
-        <div class="skill-card-large">
-          <div class="skill-icon-circle">01</div>
-          <h3>Hobby's</h3>
-          <p>Ik hou van Fitness, fietsen, muziek ontdekken en kleine technische experimenten.</p>
-        </div>
-        <div class="skill-card-large">
-          <div class="skill-icon-circle">02</div>
-          <h3>Waarom APP/AI</h3>
-          <p>Ik kies voor APP/AI omdat ik graag applicaties bouw en systemen begrijp.</p>
-        </div>
-        <div class="skill-card-large">
-          <div class="skill-icon-circle">03</div>
-          <h3>Na mijn studies</h3>
-          <p>Ik wil doorgroeien naar een rol waarin ik software, support of infrastructuur combineer.</p>
-        </div>
-        <div class="skill-card-large">
-          <div class="skill-icon-circle">04</div>
-          <h3>CV</h3>
-          <p>Mijn CV staat apart op een eigen pagina en is daar meteen beschikbaar.</p>
-          <div class="panel-actions" style="margin-top: 1rem;">
-            <a class="btn-link" href="cv.html">Bekijk CV</a>
-            <a class="btn-link btn-link-secondary" href="assets/CV_Seppe_Vanroy.pdf?v=20260429.3" download="CV_Seppe_Vanroy.pdf">Download PDF</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="experience-showcase reveal">
-      <div class="showcase-left">
-        <div class="showcase-text">
-          <p class="section-eyebrow">VAARDIGHEDEN</p>
-          <h2>Wat ik graag doe in IT</h2>
-          <p>Ik leer het meest door dingen uit te proberen, fouten op te lossen en daarna te verbeteren.</p>
-          <div class="experience-list">
-            <div class="exp-item">
-              <div class="exp-year">WEB</div>
-              <div class="exp-details">
-                <strong>Websites maken</strong>
-                <span>Ik vind het leuk om pagina's te bouwen die er verzorgd uitzien en duidelijk werken.</span>
-              </div>
-            </div>
-            <div class="exp-item">
-              <div class="exp-year">APP</div>
-              <div class="exp-details">
-                <strong>Applicaties begrijpen</strong>
-                <span>Ik wil snappen hoe een toepassing in elkaar zit, van scherm tot database.</span>
-              </div>
-            </div>
-            <div class="exp-item">
-              <div class="exp-year">TEAM</div>
-              <div class="exp-details">
-                <strong>Samen aan iets werken</strong>
-                <span>Ik denk graag mee, luister naar feedback en probeer mijn deel duidelijk af te werken.</span>
-              </div>
-            </div>
-            <div class="exp-item">
-              <div class="exp-year">HELP</div>
-              <div class="exp-details">
-                <strong>Problemen oplossen</strong>
-                <span>Als iets niet werkt, zoek ik rustig uit waar het fout loopt en probeer ik een logische oplossing te vinden.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="showcase-right">
-        <div class="highlight-card highlight-card-1">
-          <h3>Motivatie</h3>
-          <p>Ik wil begrijpen hoe dingen werken en daar zelf mee iets bouwen dat nuttig is.</p>
-        </div>
-        <div class="highlight-card highlight-card-2">
-          <h3>Werkstijl</h3>
-          <p>Rustig, gestructureerd en met aandacht voor details, maar wel met tempo als het nodig is.</p>
-        </div>
-        <div class="highlight-card highlight-card-3">
-          <h3>Doel</h3>
-          <p>Doorgroeien naar een stage of job waar ik projecten professioneel kan ondersteunen en afwerken.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="call-to-action-ultra reveal">
-      <div class="cta-content">
-        <p class="cta-eyebrow">CV EN CONTACT</p>
-        <h2>Bekijk mijn CV of download de PDF</h2>
-        <div class="cta-buttons-group">
-          <a href="cv.html" class="btn-cta btn-primary">Open CV</a>
-          <a href="assets/CV_Seppe_Vanroy.pdf?v=20260429.3" class="btn-cta btn-secondary" download="CV_Seppe_Vanroy.pdf">Download PDF</a>
-        </div>
-      </div>
-      <div class="cta-visual">
-        <div class="cta-accent cta-accent-1"></div>
-        <div class="cta-accent cta-accent-2"></div>
-      </div>
-    </section>
-
-  </main>
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-top">
-        <div class="footer-left">
-          <p class="footer-title">Seppe Vanroy</p>
-          <p class="footer-description">Tweedejaars APP/AI-student met interesse in webontwikkeling, praktische IT-support en duidelijke oplossingen.</p>
-        </div>
-        <div class="footer-right">
-          <p class="footer-connect-label">Connecteer</p>
-          <div class="footer-socials" aria-label="Sociale profielen">
-            <a class="social-icon" href="mailto:seppe.vanroy@telenet.be" aria-label="Stuur een e-mail naar Seppe">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.2-8 5.2-8-5.2V6l8 5.2L20 6v2.2Z" /></svg>
-            </a>
-            <a class="social-icon" href="https://github.com/DaddySeppe" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profiel">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.04 1.53 1.04.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 7c.85 0 1.7.11 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.56c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" /></svg>
-            </a>
-            <a class="social-icon" href="https://linkedin.com/in/seppe-vanroy-857680331" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profiel">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 9.75h4v10.5H3V9.75Zm6.25 0h3.82v1.44h.05c.53-.95 1.83-1.75 3.77-1.75 4.03 0 4.78 2.49 4.78 5.72v5.09h-4v-4.52c0-1.08-.02-2.47-1.6-2.47-1.6 0-1.85 1.18-1.85 2.39v4.6h-3.97V9.75Z" /></svg>
-            </a>
-          </div>
-          <nav class="footer-links" aria-label="Footer links">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projecten</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-        </div>
-      </div>
-      <div class="footer-divider"></div>
-      <div class="footer-bottom"><p class="footer-copyright">&copy; 2026 Seppe Vanroy. Alle rechten voorbehouden.</p></div>
-    </div>
-  </footer>
-
-  <div class="ai-chat" id="aiChatWidget" aria-live="polite">
-    <button class="ai-chat-toggle" id="aiChatToggle" type="button" aria-expanded="false" aria-controls="aiChatPanel" title="Open AI chat">
-      <span>AI</span>
-    </button>
-    <section class="ai-chat-panel" id="aiChatPanel" aria-label="Portfolio assistent">
-      <header class="ai-chat-header">
         <div>
-          <p class="ai-chat-kicker">Portfolio Assistant</p>
-          <h3 class="ai-chat-title">Vraag iets aan mijn AI</h3>
+          <h2>
+            <span
+              data-nl="Ik wil graag weten&lt;br&gt;&lt;em&gt;hoe het werkt.&lt;/em&gt;"
+              data-en="I like knowing&lt;br&gt;&lt;em&gt;how it works.&lt;/em&gt;"
+              >Ik wil graag weten<br /><em>hoe het werkt.</em></span
+            >
+          </h2>
+          <div class="story-columns">
+            <p>
+              <span data-nl="Ik koos voor Application Development omdat ik graag applicaties bouw en wil begrijpen hoe ze werken. Van de interface tot de logica en de database: ik leer het liefst door er zelf mee aan de slag te gaan. Ik weet nog niet alles, maar met elk project doe ik nieuwe ervaring op." data-en="I chose Application Development because I enjoy building applications and want to understand how they work. From the interface to the logic and database, I learn best by working on them myself. I don’t know everything yet, but each project gives me new experience.">Ik koos voor Application Development omdat ik graag applicaties bouw en wil begrijpen hoe ze werken. Van de interface tot de logica en de database: ik leer het liefst door er zelf mee aan de slag te gaan. Ik weet nog niet alles, maar met elk project doe ik nieuwe ervaring op.</span>
+            </p>
+            <p>
+              <span data-nl="Ik probeer zo zelfstandig mogelijk te werken en neem graag initiatief. Als ik ergens echt voor wil gaan, zet ik door tot ik een oplossing vind. In een team denk ik mee en sta ik open voor feedback, zodat ik mijn werk kan blijven verbeteren." data-en="I try to work as independently as possible and take initiative. When I care about something, I stick with it until I find a solution. In a team, I contribute ideas and welcome feedback so I can keep improving my work.">Ik probeer zo zelfstandig mogelijk te werken en neem graag initiatief. Als ik ergens echt voor wil gaan, zet ik door tot ik een oplossing vind. In een team denk ik mee en sta ik open voor feedback, zodat ik mijn werk kan blijven verbeteren.</span>
+            </p>
+          </div>
         </div>
-        <button class="ai-chat-close" id="aiChatClose" type="button" aria-label="Close chat">x</button>
-      </header>
-      <div class="ai-chat-messages" id="aiChatMessages"></div>
-      <form class="ai-chat-form" id="aiChatForm">
-        <input id="aiChatInput" type="text" autocomplete="off" placeholder="Typ je vraag..." />
-        <button type="submit">Verstuur</button>
-      </form>
-    </section>
-  </div>
-
-  <script src="script.min.js?v=20260430.7"></script>
-  <script>
-    (() => {
-      const introText = {
-        nl: 'Ik ben een tweedejaarsstudent APP/AI die graag praktisch bezig is met IT. Ik werk rustig, denk graag mee en probeer vooral dingen te maken die logisch in elkaar zitten en echt gebruikt kunnen worden.',
-        en: 'I am a second-year APP/AI student who enjoys practical IT work. I work calmly, like to think along, and mainly try to build things that make sense and can actually be used.'
-      };
-
-      const applyIntroText = (lang) => {
-        const intro = document.querySelector('.hero-intro-text');
-        if (!intro) return;
-        intro.textContent = introText[lang] || introText.nl;
-      };
-
-      document.querySelectorAll('.lang-btn').forEach((button) => {
-        button.addEventListener('click', () => {
-          applyIntroText(button.getAttribute('data-lang'));
-        });
-      });
-
-      applyIntroText(localStorage.getItem('language') || document.documentElement.lang || 'nl');
-      window.addEventListener('load', () => {
-        applyIntroText(localStorage.getItem('language') || document.documentElement.lang || 'nl');
-      });
-    })();
-  </script>
-</body>
+      </section>
+      <div class="personal-practice">
+        <section class="practice-inner wrap">
+          <div class="practice-heading">
+            <p class="eyebrow">
+              <span
+                data-nl="VAN STUDIE NAAR PRAKTIJK"
+                data-en="FROM STUDY TO PRACTICE"
+                >VAN STUDIE NAAR PRAKTIJK</span
+              >
+            </p>
+            <h2>
+              <span
+                data-nl="Wat ik tot nu toe&lt;br&gt;heb gedaan."
+                data-en="What I’ve&lt;br&gt;done so far."
+                >Wat ik tot nu toe<br />heb gedaan.</span
+              >
+            </h2>
+            <p>
+              <span data-nl="Naast mijn schoolprojecten werk ik mee aan MissionZebra en Skolio en maak ik met SV-Solutions websites voor bedrijven. Ook op de IT-afdeling bij Aurubis doe ik ervaring op. Zo blijf ik nieuwe dingen leren door er zelf mee aan de slag te gaan." data-en="Alongside my school projects, I work on MissionZebra and Skolio and build websites for companies through SV-Solutions. I also gain experience in the IT department at Aurubis. Working on these things myself keeps me learning.">Naast mijn schoolprojecten werk ik mee aan MissionZebra en Skolio en maak ik met SV-Solutions websites voor bedrijven. Ook op de IT-afdeling bij Aurubis doe ik ervaring op. Zo blijf ik nieuwe dingen leren door er zelf mee aan de slag te gaan.</span>
+            </p>
+          </div>
+          <div class="practice-chapters">
+            <article>
+              <p class="eyebrow">
+                <span data-nl="01 / OPLEIDING" data-en="01 / EDUCATION"
+                  >01 / OPLEIDING</span
+                >
+              </p>
+              <h3>
+                <span data-nl="Application Development" data-en="Application Development">Application Development</span>
+              </h3>
+              <p>
+                <span data-nl="In Application Development leer ik over applicaties, API’s, databases en softwareontwikkeling. Ik werk graag met React, .NET en C# en probeer nieuwe kennis meteen toe te passen in projecten." data-en="In Application Development I learn about applications, APIs, databases and software development. I enjoy working with React, .NET and C# and try to apply what I learn directly in projects.">In Application Development leer ik over applicaties, API’s, databases en softwareontwikkeling. Ik werk graag met React, .NET en C# en probeer nieuwe kennis meteen toe te passen in projecten.</span>
+              </p>
+            </article>
+            <article>
+              <p class="eyebrow">
+                <span data-nl="02 / ERVARING" data-en="02 / EXPERIENCE"
+                  >02 / ERVARING</span
+                >
+              </p>
+              <h3>
+                <span data-nl="Aurubis Olen" data-en="Aurubis Olen"
+                  >Aurubis Olen</span
+                >
+              </h3>
+              <p>
+                <span
+                  data-nl="Ik liep stage bij Aurubis Olen en werk er ook tijdens de vakanties op de IT-afdeling. Daar werkte ik onder meer mee aan software voor tablets in voertuigen. Het is leerrijk om te zien wat er nodig is wanneer iets in een bedrijf gebruikt wordt."
+                  data-en="I did an internship at Aurubis Olen and also work in the IT department during the holidays. One of the things I helped with was software for tablets in vehicles. It’s useful to see what’s involved when something is used in a company."
+                  >Ik liep stage bij Aurubis Olen en werk er ook tijdens de
+                  vakanties op de IT-afdeling. Daar werkte ik onder meer mee aan
+                  software voor tablets in voertuigen. Het is leerrijk om te
+                  zien wat er nodig is wanneer iets in een bedrijf gebruikt
+                  wordt.</span
+                >
+              </p>
+            </article>
+<article><p class="eyebrow"><span data-nl="03 / EIGEN BEDRIJF" data-en="03 / MY BUSINESS">03 / EIGEN BEDRIJF</span></p><h3>SV-Solutions</h3><p><span data-nl="Naast mijn studies run ik SV-Solutions. Daarmee maak ik websites voor bedrijven. Ik werk aan de opbouw, het ontwerp en de ontwikkeling, met aandacht voor wat een bedrijf nodig heeft en hoe bezoekers de website gebruiken." data-en="Alongside my studies, I run SV-Solutions, building websites for companies. I work on structure, design and development, considering what each business needs and how visitors use its website.">Naast mijn studies run ik SV-Solutions. Daarmee maak ik websites voor bedrijven. Ik werk aan de opbouw, het ontwerp en de ontwikkeling, met aandacht voor wat een bedrijf nodig heeft en hoe bezoekers de website gebruiken.</span></p></article>
+            <article>
+              <p class="eyebrow">
+                <span data-nl="04 / VOLGENDE STAP" data-en="04 / NEXT STEP"
+                  >04 / VOLGENDE STAP</span
+                >
+              </p>
+              <h3>
+                <span data-nl="Verder in software" data-en="Growing in software"
+                  >Verder in software</span
+                >
+              </h3>
+              <p>
+                <span data-nl="Voor mijn stage zoek ik een plek waar ik veel kan leren en kan meewerken aan echte applicaties. Ik wil mijn kennis van softwareontwikkeling verder uitbouwen en tegelijk mijn bijdrage leveren aan het team." data-en="For my internship, I’m looking for a place where I can learn a lot and contribute to real applications. I want to develop my software skills while making a useful contribution to the team.">Voor mijn stage zoek ik een plek waar ik veel kan leren en kan meewerken aan echte applicaties. Ik wil mijn kennis van softwareontwikkeling verder uitbouwen en tegelijk mijn bijdrage leveren aan het team.</span>
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+      <section class="offscreen wrap">
+        <div>
+          <p class="eyebrow">
+            <span
+              data-nl="NA HET DICHTKLAPPEN"
+              data-en="AFTER CLOSING THE LAPTOP"
+              >NA HET DICHTKLAPPEN</span
+            >
+          </p>
+          <h2>
+            <span
+              data-nl="Als mijn laptop&lt;br&gt;&lt;em&gt;dicht is.&lt;/em&gt;"
+              data-en="When my laptop&lt;br&gt;&lt;em&gt;is closed.&lt;/em&gt;"
+              >Als mijn laptop<br /><em>dicht is.</em></span
+            >
+          </h2>
+        </div>
+        <div class="offscreen-content">
+          <p>
+            <span
+              data-nl="Buiten mijn studies hou ik van fitness, wandelen in mooie gebieden en muziek ontdekken. En soms ben ik in mijn vrije tijd toch weer met een klein technisch experiment bezig."
+              data-en="Outside my studies I enjoy fitness, walking in scenic places and discovering music. And sometimes I end up working on a small technical experiment in my free time anyway."
+              >Buiten mijn studies hou ik van fitness, wandelen in mooie gebieden en muziek
+              ontdekken. En soms ben ik in mijn vrije tijd toch weer met een
+              klein technisch experiment bezig.</span
+            >
+          </p>
+          <div class="interest-words">
+            <span><span data-nl="Fitness" data-en="Fitness">Fitness</span></span
+            ><span
+              ><span data-nl="Wandelen" data-en="Walking">Wandelen</span></span
+            ><span><span data-nl="Muziek" data-en="Music">Muziek</span></span>
+          </div>
+          <p>
+            <span data-nl="Mijn focus ligt op applicatieontwikkeling. Ik maak graag iets dat mensen kunnen gebruiken en blijf nieuwsgierig naar de IT erachter. Met schoolprojecten, Skolio en mijn werk bij SV-Solutions blijf ik bijleren." data-en="My focus is application development. I enjoy building things people can use and stay curious about the IT behind them. School projects, Skolio and my work at SV-Solutions keep me learning.">Mijn focus ligt op applicatieontwikkeling. Ik maak graag iets dat mensen kunnen gebruiken en blijf nieuwsgierig naar de IT erachter. Met schoolprojecten, Skolio en mijn werk bij SV-Solutions blijf ik bijleren.</span>
+          </p>
+        </div>
+      </section>
+      <div class="toolkit-editorial"><section class="personal-toolkit wrap" aria-labelledby="toolkit-title"><header class="toolkit-heading"><div><p class="eyebrow"><span data-nl="MIJN TOOLKIT" data-en="MY TOOLKIT">MIJN TOOLKIT</span></p><h2 id="toolkit-title"><span data-nl="Wat ik gebruik." data-en="What I use.">Wat ik gebruik.</span></h2></div><p class="toolkit-note"><span data-nl="Van een eerste ontwerp tot een werkende applicatie. Dit zijn de talen en tools die ik gebruik en verder leer kennen." data-en="From an initial design to a working application. These are the languages and tools I use and continue to learn.">Van een eerste ontwerp tot een werkende applicatie. Dit zijn de talen en tools die ik gebruik en verder leer kennen.</span></p></header><div class="toolkit-lines"><article class="toolkit-line"><div class="toolkit-symbol"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="26" height="23" rx="3"/><path d="M3 11h26M8 7.5h.01M12 7.5h.01M13 16l-4 3 4 3m6-6 4 3-4 3"/></svg></div><div class="toolkit-label"><h3><span data-nl="Interfaces bouwen" data-en="Building interfaces">Interfaces bouwen</span></h3><p><span data-nl="Voor het deel dat je ziet en gebruikt." data-en="For the part you see and use.">Voor het deel dat je ziet en gebruikt.</span></p></div><div class="toolkit-tech"><ul class="toolkit-primary"><li>React</li><li>JavaScript</li></ul><ul class="toolkit-secondary"><li>HTML &amp; CSS</li><li>Vue.js</li><li>Tailwind</li><li>Bootstrap</li></ul></div></article><article class="toolkit-line"><div class="toolkit-symbol"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 7-8 9 8 9m10-18 8 9-8 9M18 4l-4 24"/></svg></div><div class="toolkit-label"><h3><span data-nl="Applicaties ontwikkelen" data-en="Developing applications">Applicaties ontwikkelen</span></h3><p><span data-nl="De logica, de data en alles daartussen." data-en="The logic, the data and everything in between.">De logica, de data en alles daartussen.</span></p></div><div class="toolkit-tech"><ul class="toolkit-primary"><li>C#</li><li>.NET</li></ul><ul class="toolkit-secondary"><li>REST APIs</li><li>SQL / MySQL</li><li>Python</li><li>PHP</li><li>Kotlin</li><li>Flask</li><li>Firebase</li></ul></div></article><article class="toolkit-line"><div class="toolkit-symbol"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><circle cx="23" cy="11" r="3"/><circle cx="9" cy="25" r="3"/><path d="M9 10v12m14-8a8 8 0 0 1-8 8H9"/></svg></div><div class="toolkit-label"><h3><span data-nl="Tools &amp; samenwerking" data-en="Tools &amp; collaboration">Tools & samenwerking</span></h3><p><span data-nl="Om te bouwen en samen aan projecten te werken." data-en="For building things and working on projects together.">Om te bouwen en samen aan projecten te werken.</span></p></div><div class="toolkit-tech"><ul class="toolkit-primary"><li>Git &amp; GitHub</li><li>VS Code</li></ul><ul class="toolkit-secondary"><li>Docker</li><li>Figma</li><li>Linux</li><li>AWS</li><li>Terminal</li><li>Agile</li></ul></div></article></div></section></div>
+      <section class="personal-end wrap">
+        <h2>
+          <span data-nl="Een stageplek&lt;br&gt;of een vraag?" data-en="An internship&lt;br&gt;or a question?">Een stageplek<br>of een vraag?</span>
+        </h2>
+        <div>
+          <a class="button" href="contact.html"
+            ><span data-nl="Laten we praten" data-en="Let’s talk"
+              >Laten we praten</span
+            ></a
+          ><a
+            class="button secondary"
+            href="assets/CV-Seppe_vanroy.pdf"
+            download="CV-Seppe_vanroy.pdf"
+            ><span data-nl="Download mijn CV" data-en="Download my CV"
+              >Download mijn CV</span
+            ></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <div class="footer-top">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">sv<span>.</span></span
+          ><span class="brand-name">SV-SOLUTIONS</span></a
+        >
+        <p>
+          <span
+            data-nl="Bedankt om even te komen kijken."
+            data-en="Thanks for stopping by."
+            >Bedankt om even te komen kijken.</span
+          >
+        </p>
+        <div class="socials">
+          <a
+            href="https://github.com/DaddySeppe"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          ><a
+            href="https://linkedin.com/in/seppe-vanroy-857680331"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          ><a href="mailto:seppe.vanroy@telenet.be">E-mail</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Seppe Vanroy</span
+        ><span data-nl="Portfolio van Seppe." data-en="Seppe’s portfolio."
+          >Portfolio van Seppe.</span
+        ><a href="#top"
+          ><span data-nl="Terug naar boven" data-en="Back to top"
+            >Terug naar boven</span
+          ></a
+        >
+      </div>
+    </footer>
+    <aside class="chat">
+      <button
+        class="chat-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="chat-panel"
+        aria-label="Portfolio assistent"
+      >
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          aria-hidden="true"
+        >
+          <path d="M4 4h16v12H9l-5 4V4Z"></path>
+          <path d="M8 9h8M8 12h5"></path>
+        </svg>
+      </button>
+      <section id="chat-panel" hidden="" aria-label="Portfolio assistent">
+        <div class="chat-head">
+          <strong
+            ><span data-nl="Portfolio assistent" data-en="Portfolio assistant"
+              >Portfolio assistent</span
+            ></strong
+          ><button type="button" class="chat-close" aria-label="Sluiten">
+            ×
+          </button>
+        </div>
+        <div class="chat-messages" role="log" aria-live="polite">
+          <p>
+            <span
+              data-nl="Hoi! Vraag me iets over mijn projecten, skills of ervaring."
+              data-en="Hi! Ask me about my projects, skills or experience."
+              >Hoi! Vraag me iets over mijn projecten, skills of ervaring.</span
+            >
+          </p>
+        </div>
+        <form id="chat-form">
+          <label class="sr-only" for="chat-input"
+            ><span data-nl="Je vraag" data-en="Your question"
+              >Je vraag</span
+            ></label
+          ><input
+            id="chat-input"
+            required=""
+            maxlength="600"
+            autocomplete="off"
+          /><button type="submit">
+            <span data-nl="Stuur" data-en="Send">Stuur</span>
+          </button>
+        </form>
+      </section>
+    </aside>
+  </body>
 </html>
-
-
-
