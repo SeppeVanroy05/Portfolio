@@ -2399,3 +2399,140 @@ h1 {
  .toolkit-primary li { font-size: 1.8rem; }
  .toolkit-secondary { grid-template-columns: repeat(2,minmax(0,1fr)); margin-top: 18px; }
 }
+/* Mobile keeps the desktop composition, scaled to a narrow canvas. */
+@media (max-width: 760px) {
+  html { scroll-padding-top: 24px; }
+  .wrap { width: calc(100% - 40px); }
+  .header { height: 76px; }
+  .header nav { top: 76px; }
+  .header .brand { gap: 10px; }
+  .header .brand-name { font-size: .68rem; letter-spacing: .08em; }
+  .header .brand-mark { font-size: 2.3rem; }
+  .eyebrow { font-size: .65rem; letter-spacing: .1em; line-height: 1.6; }
+  .home-page .hero { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: 20px 18px; padding-block: 32px 38px; align-items: center; }
+  .home-page .hero-copy { display: contents; }
+  .home-page .hero-copy > .eyebrow { grid-column: 1 / -1; grid-row: 1; margin: 0; font-size: .62rem; letter-spacing: .085em; }
+  .home-page .hero h1 { grid-column: 1; grid-row: 2; margin: 0; font-size: clamp(2.7rem, 11.8vw, 5rem); line-height: 1.04; letter-spacing: -.065em; align-self: center; }
+  .home-page .hero-portrait { grid-column: 2; grid-row: 2; width: 100%; max-width: none; margin: 0; justify-self: stretch; }
+  .home-page .portrait-label { font-size: .48rem; letter-spacing: .09em; line-height: 1.5; margin-bottom: 7px; }
+  .home-page .portrait-photo { height: clamp(170px, 49vw, 300px); border-radius: 52px 3px 3px 3px; }
+  .home-page .portrait-signature { margin-top: 9px; gap: 3px; }
+  .home-page .portrait-signature strong { font-size: .8rem; }
+  .home-page .portrait-signature > span { font-size: .48rem; letter-spacing: .045em; line-height: 1.5; }
+  .home-page .portrait-stamp { width: 58px; height: 58px; font-size: .6rem; border-width: 3px; left: -15px; bottom: 39px; }
+  .home-page .portrait-stamp span { font-size: .95rem; margin-top: 4px; }
+  .home-page .hero-intro { grid-column: 1 / -1; max-width: none; font-size: .94rem; line-height: 1.75; margin: 0; }
+  .home-page .hero-business { margin-top: -7px; }
+  .home-page .hero .actions { grid-column: 1 / -1; display: grid; grid-template-columns: 1.25fr 1fr; margin: 3px 0 0; gap: 10px; }
+  .home-page .hero .button { font-size: .75rem; padding-inline: 10px; min-height: 48px; }
+  .home-page .hero-note { grid-column: 1 / -1; margin: 0; gap: 12px; font-size: .7rem; line-height: 1.5; }
+  .home-page .expertise-strip { transform: rotate(-1deg); padding: 19px 0; }
+  .home-page .expertise-strip .wrap { width: calc(100% - 40px); min-width: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 12px; font-size: .57rem; letter-spacing: .065em; }
+  .home-page .expertise-strip span:nth-child(odd) { display: flex; align-items: center; gap: 9px; }
+  .home-page .expertise-strip span:nth-child(odd)::before { content: '✳'; font-size: .9rem; line-height: 1; }
+  .home-page .expertise-strip span:nth-child(even) { display: none; }
+  .home-page #work { padding-block: 48px 56px; }
+  .home-page #work .section-heading h2, .home-page .about-preview h2 { font-size: clamp(2.25rem, 9.2vw, 3.6rem); line-height: 1.08; }
+  .section-heading .text-link { margin-top: 18px; font-size: .8rem; }
+  .home-page #work .project-grid { gap: 30px; }
+  .home-page #work .zebra .project-visual { aspect-ratio: 1.45; padding: 42px 18px 20px; border-top-right-radius: 45px; }
+  .home-page #work .helpse .project-visual { aspect-ratio: 1.45; padding: 40px 26px 22px; border-bottom-right-radius: 45px; }
+  .project-caption { gap: 12px; }
+  .project-caption h3 { font-size: 1.55rem; }
+  .project-caption p { font-size: .87rem; line-height: 1.7; }
+  .small-tag { font-size: .6rem; padding: 5px 8px; margin-top: 15px; }
+  .home-page .about-preview { padding-block: 48px; gap: 28px; }
+  .home-page .about-preview p { font-size: .94rem; line-height: 1.75; }
+  .home-page .about-preview .skill-row { border-radius: 6px; padding: 20px; }
+  .home-page .about-preview .skill-row h3 { font-size: 1.15rem; }
+  .home-page .home-contact { padding-block: 48px; gap: 28px; }
+  .home-contact h2 { font-size: 2.35rem; letter-spacing: -.055em; }
+  .home-contact .intro { font-size: .94rem; }
+  .home-page .home-contact .contact-form, .contact-form { padding: 22px 18px; border-radius: 4px; }
+  .contact-form input, .contact-form textarea { font-size: 16px; }
+  .form-row { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .contact-form label { font-size: .8rem; min-width: 0; }
+  .contact-form button { width: 100%; }
+  .home-page .cta { padding-block: 44px; }
+  .cta h2 { font-size: clamp(2.4rem, 10vw, 4rem); }
+  .footer-top { display: grid; grid-template-columns: 1fr; gap: 22px; }
+  .footer .brand-mark { font-size: 2.1rem; }
+  .footer .brand-name { font-size: .65rem; }
+  .socials { width: 100%; display: flex; justify-content: space-between; font-size: .85rem; }
+  .footer-bottom { font-size: .65rem; padding-right: 40px; gap: 10px; }
+  .page-intro { padding-block: 36px 32px; }
+  .page-intro h1 { font-size: clamp(2.65rem, 11.5vw, 4.5rem); line-height: 1.05; margin-top: 16px; }
+  .page-intro .lead { font-size: .94rem; line-height: 1.75; margin-top: 20px; }
+  .contact-layout { gap: 26px; padding-bottom: 44px; }
+  .contact-layout > div { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .contact-layout .contact-detail { margin: 0; padding-bottom: 0; }
+  .contact-layout .contact-detail:first-child, .contact-layout > div > p { grid-column: 1 / -1; }
+  .contact-detail a { font-size: .92rem; overflow-wrap: anywhere; }
+  .work-opening { gap: 22px; padding-block: 36px 30px; }
+  .work-opening h1 { font-size: clamp(3rem, 12vw, 5rem); }
+  .work-opening > p, .entry-description { font-size: .94rem; line-height: 1.75; }
+  .work-entry, .work-entry.featured-entry { gap: 22px; padding-block: 28px; }
+  .work-entry.featured-entry { padding: 24px 20px; }
+  .entry-info h2 { font-size: 2.35rem; margin-top: 14px; }
+  .entry-bottom { margin-top: 16px; }
+  .entry-image, .featured-entry .entry-image { height: auto; aspect-ratio: 1.5; padding: 18px; }
+  .entry-topline { font-size: .65rem; gap: 12px; }
+  .personal-intro { grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); gap: 24px 20px; align-items: center; padding-block: 36px 42px; }
+  .personal-name { grid-column: 1; grid-row: 1; }
+  .personal-name h1 { font-size: clamp(2.7rem, 11.8vw, 5rem); margin-top: 15px; }
+  .personal-caption { font-size: .54rem; letter-spacing: .04em; line-height: 1.7; margin-top: 20px; }
+  .personal-photo { grid-column: 2; grid-row: 1; width: 100%; padding: 0 8px 9px; margin: 8px 0 0; align-self: center; }
+  .personal-photo img { height: clamp(205px, 55vw, 300px); margin-top: -7px; }
+  .personal-photo figcaption { font-size: .73rem; padding-top: 9px; }
+  .personal-hello { grid-column: 1 / -1; grid-row: 2; padding: 0; max-width: none; }
+  .personal-hello p, .story-columns p, .practice-chapters p, .offscreen-content p { font-size: .94rem; line-height: 1.75; }
+  .hello-label { font-size: 1.3rem; }
+  .personal-story { gap: 18px; padding-block: 32px 40px; }
+  .personal-story h2 { font-size: 2.1rem; }
+  .practice-inner { padding-block: 40px; gap: 28px; }
+  .practice-heading h2, .offscreen h2 { font-size: 2.35rem; }
+  .practice-chapters article { padding-block: 24px; }
+  .offscreen { padding-block: 40px; gap: 24px; }
+  .interest-words { justify-content: space-between; gap: 12px; font-size: 1.1rem; margin-block: 24px; }
+  .toolkit-editorial .personal-toolkit { padding-block: 38px; }
+  .toolkit-heading h2 { font-size: 2.35rem; }
+  .toolkit-note { font-size: .9rem; }
+  .toolkit-line, .toolkit-line:first-child, .toolkit-line:last-child { grid-template-columns: 38px 1fr; gap: 0 16px; padding-block: 24px; }
+  .toolkit-symbol { width: 38px; height: 38px; }
+  .toolkit-symbol svg { width: 21px; height: 21px; }
+  .toolkit-label h3 { font-size: 1.15rem; }
+  .toolkit-primary li { font-size: 1.65rem; }
+  .toolkit-tech { margin-top: 18px; }
+  .personal-end { padding-block: 32px 44px; }
+  .personal-end h2 { font-size: 2.05rem; }
+  .personal-end > div { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .personal-end .button { font-size: .73rem; padding-inline: 10px; }
+  .case-header h1 { font-size: clamp(2.7rem, 11vw, 4.2rem); overflow-wrap: anywhere; }
+  .case-header .lead, .case-content p { font-size: .94rem; line-height: 1.75; }
+  .case-cover { height: auto; aspect-ratio: 1.45; }
+  .case-content { padding-top: 30px; }
+  .case-content h2 { font-size: 1.85rem; }
+  .case-content section { margin-bottom: 32px; }
+  .cv-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .cv-actions .button { font-size: .8rem; padding-inline: 10px; }
+  .cv-frame { margin-top: 6px; }
+  .cv-frame iframe { height: 500px; }
+  .chat { right: 12px; bottom: max(12px, env(safe-area-inset-bottom)); }
+  #chat-panel { width: min(350px, calc(100vw - 24px)); }
+}
+@media (max-width: 350px) {
+  .wrap { width: calc(100% - 32px); }
+  .home-page .hero { gap: 18px 14px; }
+  .home-page .hero h1 { font-size: 2.4rem; }
+  .home-page .hero .button { font-size: .65rem; }
+  .personal-name h1 { font-size: 2.35rem; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.cv-mobile-preview { display: none; }
+@media (max-width: 760px) {
+ .cv-mobile-preview { display: block; }
+ .cv-mobile-preview img { width: 100%; height: auto; display: block; background: white; }
+ .cv-frame iframe { display: none; }
+}
+@media (max-width: 350px) { .home-page .expertise-strip { transform: none; } }
